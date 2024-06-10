@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+			rel="stylesheet" />
+		<!-- Akhir Font -->
+
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Akhir Tailwind CSS -->
+
+		<!-- Icon -->
+		<script
+			src="https://kit.fontawesome.com/d7f673dfd5.js"
+			crossorigin="anonymous"></script>
+		<!-- Akhir Icon -->
+
+		<link rel="stylesheet" href="{% static 'css/global.css' %}" />
+
+		<title>Dashboard</title>
+	</head>
+	<body class="flex overflow-hidden">
+		<!-- SIDEBAR -->
+		<aside
+			class="w-[300px] bg-white shadow-xl flex flex-col gap-12 h-screen justify-between">
+			<div class="flex flex-col gap-3">
+				<div class="flex justify-center">
+					<img
+						class="w-[200px] p-4"
+						src="{% static 'img/logo-dashboard.svg' %}"
+						alt="" />
+				</div>
+
+				<div class="flex flex-col gap-5 pl-4">
+					<a class="flex justify-between w-full" href="">
+						<div class="text-orange-500 flex items-center gap-2 py-3">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10 3H3V10H10V3Z"
+									stroke="#F97316"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M21 3H14V10H21V3Z"
+									stroke="#F97316"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M21 14H14V21H21V14Z"
+									stroke="#F97316"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M10 14H3V21H10V14Z"
+									stroke="#F97316"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+							<p>Dashboard</p>
+						</div>
+						<div class="w-[5px] rounded-l-xl bg-orange-500"></div>
+					</a>
+
+					<a class="flex justify-between w-full" href="">
+						<div class="text-neutral-500 flex items-center gap-2 py-3">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12 2L2 7L12 12L22 7L12 2Z"
+									stroke="#737373"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M2 17L12 22L22 17"
+									stroke="#737373"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M2 12L12 17L22 12"
+									stroke="#737373"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+
+							<p>My Course</p>
+						</div>
+						<div class="w-[5px] rounded-l-xl bg-orange-500 invisible"></div>
+					</a>
+
+					<a class="flex justify-between w-full" href="">
+						<div class="text-neutral-500 flex items-center gap-2 py-3">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
+									stroke="#737373"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
+									stroke="#737373"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13"
+									stroke="#737373"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88"
+									stroke="#737373"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+
+							<p>Mentoring</p>
+						</div>
+						<div class="w-[5px] rounded-l-xl bg-orange-500 invisible"></div>
+					</a>
+
+					<a class="flex justify-between w-full" href="">
+						<div class="text-neutral-500 flex items-center gap-2 py-3">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+									stroke="#737373"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+									stroke="#737373"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+
+							<p>Profile</p>
+						</div>
+						<div class="w-[5px] rounded-l-xl bg-orange-500 invisible"></div>
+					</a>
+				</div>
+			</div>
+
+			<a href="{% url 'logout' %}" class="flex items-center gap-2 bg-red-100 p-5 text-red-500">
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9"
+						stroke="#ef4444"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path
+						d="M16 17L21 12L16 7"
+						stroke="#ef4444"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path
+						d="M21 12H9"
+						stroke="#ef4444"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+
+				Keluar
+			</a>
+		</aside>
+		<!-- AKHIR SIDEBAR -->
+
+		<!-- MAIN -->
+		<main class="container text-base m-11">
+			<div class="grid grid-cols-12 gap-4">
+				<div
+					class="col-start-1 col-end-13 flex flex-col p-5 border rounded-xl shadow-xl gap-2">
+					<h1 class="text-2xl font-bold">Pagi {{ user.username | title }} 👋</h1>
+					<p class="font-medium">Selamat datang kembali</p>
+
+					<p class="text-neutral-500">
+						kamu telah menyelesaikan 70% pembelajaran di minggu ini! <br />
+						Pertahankan dan tingkatkan progresmu
+					</p>
+				</div>
+
+				<div
+					class="col-start-1 gap-2 col-end-5 flex flex-col rounded-xl shadow-xl p-5">
+					<p class="text-orange-500">Enrolled Courses</p>
+					<h1 class="text-5xl font-bold">5</h1>
+				</div>
+
+				<div
+					class="col-start-5 gap-2 col-end-9 flex flex-col rounded-xl shadow-xl p-5">
+					<p class="text-orange-500">Active Courses</p>
+					<h1 class="text-5xl font-bold">5</h1>
+				</div>
+
+				<div
+					class="col-start-9 gap-2 col-end-13 flex flex-col rounded-xl shadow-xl p-5">
+					<p class="text-orange-500">Completed Courses</p>
+					<h1 class="text-5xl font-bold">0</h1>
+				</div>
+			</div>
+		</main>
+		<!-- AKHIR MAIN -->
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="{% static 'js/navbar.js' %}"></script>
+	</body>
+</html>

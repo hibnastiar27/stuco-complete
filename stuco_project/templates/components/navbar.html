@@ -1,0 +1,219 @@
+{% load static %}
+<nav data-aos="fade-down" class="border-b bg-white fixed w-full z-50">
+	<div
+		class="flex px-5 sm:px-20 py-4 justify-between items-center text-neutral-700">
+		<h1 class="text-2xl font-bold">STUCO</h1>
+
+		<div class="gap-6 font-medium hidden md:flex">
+			<a
+				class="
+					{% if halaman_aktif == 'beranda' %}
+						text-orange-500
+					{% else %}
+						text-neutral-700
+					{% endif %}
+					flex flex-col gap-1 group duration-300 transition-all"
+				href="{% url 'beranda' %}">
+				<p>Beranda</p>
+				<hr
+					class="
+					{% if halaman_aktif == 'beranda' %}
+						w-full
+						border-orange-500
+					{% else %}
+						w-0
+						border-white
+					{% endif %}
+					border-2 group-hover:border-orange-500 group-hover:w-full group-hover:transition-all transition-all group-hover:duration-300" />
+			</a>
+			<a
+				class="
+				{% if halaman_aktif == 'kelas' %}
+					text-orange-500
+				{% else %}
+					text-neutral-700
+				{% endif %}
+				flex flex-col gap-1 group duration-300 transition-all"
+				href="{% url 'stuco_app:kelas' %}">
+				<div class="flex items-center gap-2">
+					<p>Kelas</p>
+					<svg
+						id="kelas_icon"
+						class=""
+						width="14"
+						height="9"
+						viewBox="0 0 14 9"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M1 1.5L7 7.5L13 1.5"
+							stroke="
+								{% if halaman_aktif == 'kelas' %}
+									#f97316
+								{% else %}
+									black
+								{% endif %}"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</div>
+				<hr
+					class="
+					{% if halaman_aktif == 'kelas' %}
+						w-full border-orange-500
+					{% else %}
+						w-0 border-white
+					{% endif %}
+					border-2 group-hover:border-orange-500 group-hover:w-full group-hover:transition-all transition-all group-hover:duration-300" />
+			</a>
+			<a
+				class="
+				{% if halaman_aktif == 'roadmap' %}
+					text-orange-500
+				{% else %}
+					text-neutral-700
+				{% endif %}
+				flex flex-col gap-1 group duration-300 transition-all"
+				href="{% url 'stuco_app:roadmap' %}">
+				<div class="flex items-center gap-2">
+					<p>Alur Belajar</p>
+					<svg
+						id="kelas_icon"
+						class=""
+						width="14"
+						height="9"
+						viewBox="0 0 14 9"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M1 1.5L7 7.5L13 1.5"
+							stroke="
+							{% if halaman_aktif == 'roadmap' %}
+								#f97316
+							{% else %}
+								black
+							{% endif %}"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</div>
+				<hr
+					class="
+					{% if halaman_aktif == 'roadmap' %}
+						w-full
+						border-orange-500
+					{% else %}
+						w-0
+						border-white
+					{% endif %}
+					border-2 group-hover:border-orange-500 group-hover:w-full group-hover:transition-all transition-all group-hover:duration-300" />
+			</a>
+			<a
+				class="
+				{% if halaman_aktif == 'mentoring' %}
+					text-orange-500
+				{% else %}
+					text-neutral-700
+				{% endif %}
+				flex flex-col gap-1 group duration-300 transition-all"
+				href="{% url 'stuco_app:mentoring' %}">
+				<p>Mentoring</p>
+				<hr
+					class="
+					{% if halaman_aktif == 'mentoring' %}
+						w-full
+						border-orange-500
+					{% else %}
+					w-0
+						border-white
+					{% endif %}
+					border-2 group-hover:border-orange-500 group-hover:w-full group-hover:transition-all transition-all group-hover:duration-300" />
+			</a>
+		</div>
+
+		<div class="flex items-center gap-4">
+			{% if user.is_authenticated %}
+				<p class="text-neutral-700 font-medium">{{ user.username | title }}</p>
+				<button id="btn-dropdown">
+					<img class="w-10 h-10 shadow-xl shadow-neutral-500/25 rounded-full" src="{% static 'img/mentor1.png' %}" alt="hao">
+				</button>
+
+				<div id="profile-dropdown" class="hidden absolute right-4 top-20 flex flex-col bg-white border shadow-xl *:px-5 *:py-2 rounded-xl">
+					<a href="{% url 'dashboard' %}" class="w-full text-neutral-500 hover:bg-orange-50 hover:text-orange-500 flex flex-col gap-1 group duration-300 transition-all rounded-t-xl">Dashboard</a>
+					<a href="" class="w-full text-neutral-500 hover:bg-orange-50 hover:text-orange-500 flex flex-col gap-1 group duration-300 transition-all">My Course</a>
+					<a href="" class="w-full text-neutral-500 hover:bg-orange-50 hover:text-orange-500 flex flex-col gap-1 group duration-300 transition-all">Mentoring</a>
+					<a href="" class="w-full text-neutral-500 hover:bg-orange-50 hover:text-orange-500 flex flex-col gap-1 group duration-300 transition-all">Profile</a>
+					<a href="{% url 'logout' %}" class="w-full text-red-500 bg-red-50 rounded-b-xl hover:bg-red-100 flex flex-col gap-1 group duration-300 transition-all">Logout</a>
+			{% else %}
+			<a 
+				href="{% url 'stuco_app:login_user' %}"
+				class="hidden md:block bg-neutral-800 rounded-lg text-white px-6 py-2">
+				Login
+			</a>
+			{% endif %}
+
+			<button class="md:hidden text-3xl">
+				<i id="toggle" class="fa-solid fa-bars transition-all duration-300"></i>
+			</button>
+		</div>
+	</div>
+
+	<div
+		id="dropdown"
+		class="hidden absolute right-4 top-20 flex flex-col bg-white border shadow-xl p-5 rounded-lg gap-5">
+		<a
+			class="
+			{% if halaman_aktif == 'beranda' %}
+				w-full
+				text-orange-500
+			{% else %}
+				w-0
+				text-black
+			{% endif %}
+			flex flex-col gap-1 group duration-300 transition-all"
+			href="{% url 'beranda' %}">
+			<p>Beranda</p>
+		</a>
+		<a
+			class="
+			{% if halaman_aktif == 'kelas' %}
+				w-full
+				text-orange-500
+			{% else %}
+				w-0
+				text-black
+			{% endif %}
+			flex flex-col gap-1 group duration-300 transition-all"
+			href="{% url 'stuco_app:kelas' %}">
+			<p>Kelas</p>
+		</a>
+		<a
+			class="
+			{% if halaman_aktif == 'roadmap' %}
+				w-full
+				text-orange-500
+			{% else %}
+				w-0
+				text-black
+			{% endif %}
+			flex flex-col gap-1 group duration-300 transition-all"
+			href="{% url 'stuco_app:roadmap' %}">
+			<p>Alur Belajar</p>
+		</a>
+		<a
+			class="
+			{% if halaman_aktif == 'mentoring' %}
+				w-full
+				text-orange-500
+			{% else %}
+				w-0
+				text-black
+			{% endif %}
+			flex flex-col gap-1 group duration-300 transition-all"
+			href="{% url 'stuco_app:mentoring' %}">
+			<p>Mentoring</p>
+		</a>
+	</div>
+</nav>

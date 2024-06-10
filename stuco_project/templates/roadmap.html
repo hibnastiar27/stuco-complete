@@ -1,0 +1,255 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block title %} Roadmap {% endblock %} 
+
+{% block konten %}
+<main class="sm:pt-20">
+	<div class="flex flex-col text-center sm:py-10 gap-4">
+		<h1 class="text-3xl font-semibold">
+			#RoadmapTo<span class="text-orange-500">Future</span>
+		</h1>
+		<p>
+			Mempelajari design dan code lebih terpercaya dengan <br />
+			mengikuti roadmap yang telah kami design
+		</p>
+	</div>
+
+	<div class="flex">
+		<div
+			class="flex gap-4 *:px-4 *:p-2 *:text-sm *:rounded-lg justify-center w-full">
+			<button id="role" class="roadmap active">Role based Roadmaps</button>
+			<button id="skill" class="roadmap">Skill based Roadmaps</button>
+			<button id="best" class="roadmap">Best Practices</button>
+		</div>
+	</div>
+
+	<div class="sm:py-10 px-5 py-10 flex flex-col items-center gap-6">
+		<div
+			id="role-content"
+			class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-center sm:px-20 w-full md:w-fit">
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-01.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">
+							Full-Stack JavaScript Developer
+						</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<a
+					href="{% url 'stuco_app:roadmap_detail' %}"
+					class="text-center bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</a>
+			</div>
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-02.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">
+							No Code Webflow Website Developer
+						</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-03.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">UI/UX Designer</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-03.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">Mobile UI Designer</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+		</div>
+
+		<div
+			id="skill-content"
+			class="hidden grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-center sm:px-20 w-full md:w-fit">
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-05.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">Skill Base</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-06.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">
+							Full-Stack JavaScript Developer
+						</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-07.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">
+							Full-Stack JavaScript Developer
+						</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-08.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">
+							Full-Stack JavaScript Developer
+						</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+		</div>
+
+		<div
+			id="best-content"
+			class="hidden grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-center sm:px-20 w-full md:w-fit">
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-05.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">Best</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-02.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">
+							Full-Stack JavaScript Developer
+						</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-04.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">
+							Full-Stack JavaScript Developer
+						</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-2 border border-neutral-100">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-08.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">
+							Full-Stack JavaScript Developer
+						</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}

@@ -1,0 +1,226 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block title %} Roadmap {% endblock %} 
+
+{% block konten %}
+<!-- MAIN -->
+<!-- <section class="sm:pt-20">
+	<div class="flex flex-col items-center py-20 gap-5 bg-white">
+		<h1 class="text-6xl font-bold text-center">
+			Full-Stack <span class="text-orange-500">JavaScript</span> <br />
+			Developer
+		</h1>
+		<ul class="list-disc flex flex-col gap-0 items-center">
+			<li>Mempelajari dasar-dasar website development yang ideal</li>
+			<li>
+				Mempelajari pembuatan projek website modern dengan tampilan menarik
+			</li>
+		</ul>
+	</div>
+</section> -->
+<!-- AKHIR MAIN -->
+
+<!-- MAIN -->
+<!-- <section>
+	<div class="flex flex-col items-center py-20 gap-5 bg-neutral-100">
+		<div class="flex flex-col gap-1 text-center">
+			<p class="text-orange-500 font-bold">Well-Designed Roadmap</p>
+			<h1 class="text-5xl font-bold leading-tight">
+				Syllabus Full-Stack <br />
+				JavaScript Developer
+			</h1>
+		</div>
+		<div class="flex flex-col gap-6">
+			<div class="flex flex-col gap-4">
+				<p class="text-orange-500 font-bold">Beginner</p>
+				<div
+					class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+					<div class="flex flex-col rounded-xl bg-white shadow-xl">
+						<img
+							class="rounded-t-xl"
+							src="{% static 'img/katalog-03.png' %}"
+							alt="" />
+						<div class="p-4 flex flex-col gap-2 text-xs">
+							<h1 class="font-bold text-base">
+								Introduction to JavaScript
+							</h1>
+							<span class="flex gap-2">
+								<p class="text-green-500 font-medium">GRATIS</p>
+							</span>
+							<div class="flex items-center gap-2">
+								<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+								<p>(10k)</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col rounded-xl bg-white shadow-xl">
+						<img
+							class="rounded-t-xl"
+							src="{% static 'img/katalog-05.png' %}"
+							alt="" />
+						<div class="p-4 flex flex-col gap-2 text-xs">
+							<h1 class="font-bold text-base">
+								HTML, CSS, and Basic Web Development
+							</h1>
+							<span class="flex gap-2">
+								<p class="text-green-500 font-medium">GRATIS</p>
+							</span>
+							<div class="flex items-center gap-2">
+								<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+								<p>(9k)</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col rounded-xl bg-white shadow-xl">
+						<img
+							class="rounded-t-xl"
+							src="{% static 'img/katalog-06.png' %}"
+							alt="" />
+						<div class="p-4 flex flex-col gap-2 text-xs">
+							<h1 class="font-bold text-base">
+								Introduction to Git and Version Control
+							</h1>
+							<span class="flex gap-2">
+								<p class="text-green-500 font-medium">GRATIS</p>
+							</span>
+							<div class="flex items-center gap-2">
+								<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+								<p>(8k)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col gap-4">
+				<p class="text-orange-500 font-bold">Intermediate</p>
+				<div
+					class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+					<div class="flex flex-col rounded-xl bg-white shadow-xl">
+						<img
+							class="rounded-t-xl"
+							src="{% static 'img/katalog-05.png' %}"
+							alt="" />
+						<div class="p-4 flex flex-col gap-2 text-xs">
+							<h1 class="font-bold text-base">
+								Advanced JavaScript Concepts
+							</h1>
+							<span class="flex gap-2">
+								<p class="text-red-500 line-through">Rp 550.000</p>
+								<p>Rp 220.000</p>
+							</span>
+							<div class="flex items-center gap-2">
+								<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+								<p>(10k)</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col rounded-xl bg-white shadow-xl">
+						<img
+							class="rounded-t-xl"
+							src="{% static 'img/katalog-06.png' %}"
+							alt="" />
+						<div class="p-4 flex flex-col gap-2 text-xs">
+							<h1 class="font-bold text-base">
+								Front-End Frameworks and Libraries
+							</h1>
+							<span class="flex gap-2">
+								<p class="text-red-500 line-through">Rp 550.000</p>
+								<p>Rp 220.000</p>
+							</span>
+							<div class="flex items-center gap-2">
+								<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+								<p>(9k)</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col rounded-xl bg-white shadow-xl">
+						<img
+							class="rounded-t-xl"
+							src="{% static 'img/katalog-03.png' %}"
+							alt="" />
+						<div class="p-4 flex flex-col gap-2 text-xs">
+							<h1 class="font-bold text-base">
+								Back-End Development with Node.js
+							</h1>
+							<span class="flex gap-2">
+								<p class="text-red-500 line-through">Rp 550.000</p>
+								<p>Rp 220.000</p>
+							</span>
+							<div class="flex items-center gap-2">
+								<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+								<p>(8k)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col gap-4">
+				<p class="text-orange-500 font-bold">Advanced</p>
+				<div
+					class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+					<div class="flex flex-col rounded-xl bg-white shadow-xl">
+						<img
+							class="rounded-t-xl"
+							src="{% static 'img/katalog-02.png' %}"
+							alt="" />
+						<div class="p-4 flex flex-col gap-2 text-xs">
+							<h1 class="font-bold text-base">Full-Stack Development</h1>
+							<span class="flex gap-2">
+								<p class="text-red-500 line-through">Rp 550.000</p>
+								<p>Rp 220.000</p>
+							</span>
+							<div class="flex items-center gap-2">
+								<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+								<p>(10k)</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col rounded-xl bg-white shadow-xl">
+						<img
+							class="rounded-t-xl"
+							src="{% static 'img/katalog-01.png' %}"
+							alt="" />
+						<div class="p-4 flex flex-col gap-2 text-xs">
+							<h1 class="font-bold text-base">
+								Advanced React and Ecosystem
+							</h1>
+							<span class="flex gap-2">
+								<p class="text-red-500 line-through">Rp 550.000</p>
+								<p>Rp 220.000</p>
+							</span>
+							<div class="flex items-center gap-2">
+								<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+								<p>(9k)</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col rounded-xl bg-white shadow-xl">
+						<img
+							class="rounded-t-xl"
+							src="{% static 'img/katalog-00.png' %}"
+							alt="" />
+						<div class="p-4 flex flex-col gap-2 text-xs">
+							<h1 class="font-bold text-base">
+								Advanced Node.js and Server-Side Concepts
+							</h1>
+							<span class="flex gap-2">
+								<p class="text-red-500 line-through">Rp 550.000</p>
+								<p>Rp 220.000</p>
+							</span>
+							<div class="flex items-center gap-2">
+								<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+								<p>(8k)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+<!-- AKHIR MAIN -->
+{% endblock %}

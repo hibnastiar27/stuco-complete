@@ -1,0 +1,13 @@
+* {
+	font-family: "Inter", sans-serif;
+}
+
+.roadmap {
+	background-color: #fff;
+	color: black;
+}
+.roadmap.active {
+	background-color: black;
+	box-shadow: 0px 10px 10px rgba(125, 125, 125, 0.318);
+	color: #fff;
+}

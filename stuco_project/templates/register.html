@@ -1,0 +1,117 @@
+{% extends 'base-auth.html' %} {% load static %}
+
+{% block title %} Register {% endblock %}
+
+{% block auth %}
+
+<!-- Sisi Kanan -->
+<div class="w-full flex justify-center items-center">
+	<div class="flex flex-col gap-4">
+		<div class="head">
+			<h1 class="text-3xl font-bold">Hello Again!</h1>
+			<p class="">Sign Up to Get Started</p>
+		</div>
+		<div class="flex flex-col gap-3">
+			{% if registered %}
+				<script>
+					window.location.href = "{% url 'stuco_app:login_user' %}";
+					alert("Register Success");
+				</script>
+			{% else %}
+				<form method="POST" class="flex flex-col gap-3">
+					{% csrf_token %}	
+					<div class="p-4 flex gap-2 bg-white rounded-full border">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.3">
+								<path
+									d="M7.5 6.5C7.5 8.981 9.519 11 12 11C14.481 11 16.5 8.981 16.5 6.5C16.5 4.019 14.481 2 12 2C9.519 2 7.5 4.019 7.5 6.5ZM20 21H21V20C21 16.141 17.859 13 14 13H10C6.14 13 3 16.141 3 20V21H20Z"
+									fill="#333333" />
+							</g>
+						</svg>
+
+						{{ user_form.username }}
+						<!-- {% if user_form.username.errors %}
+							<p class="text-red-500 text-xs italic">{{ form.username.errors }}</p>
+						{% endif %} -->
+
+						<!-- <input
+							class="focus:outline-none"
+							type="email"
+							placeholder="Username" /> -->
+					</div>
+
+					<div class="p-4 flex gap-2 bg-white rounded-full border">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.3">
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M1.5 5.25L2.25 4.5H21.75L22.5 5.25V18.75L21.75 19.5H2.25L1.5 18.75V5.25ZM3 6.8025V18H21V6.804L12.465 13.35H11.55L3 6.8025ZM19.545 6H4.455L12 11.8035L19.545 6Z"
+									fill="#333333" />
+							</g>
+						</svg>
+
+						{{ user_form.email }}
+						<!-- {% if user_form.email.errors %}
+							<p class="text-red-500 text-xs italic">{{ form.username.errors }}</p>
+						{% endif %} -->
+
+						<!-- <input
+							class="focus:outline-none"
+							type="password"
+							placeholder="Email" /> -->
+					</div>
+
+					<div class="p-4 flex gap-2 bg-white rounded-full border">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.3">
+								<path
+									d="M20 12C20 10.897 19.103 10 18 10H17V7C17 4.243 14.757 2 12 2C9.243 2 7 4.243 7 7V10H6C4.897 10 4 10.897 4 12V20C4 21.103 4.897 22 6 22H18C19.103 22 20 21.103 20 20V12ZM9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7V10H9V7Z"
+									fill="#333333" />
+							</g>
+						</svg>
+
+						{{ user_form.password }}
+						<!-- {% if user_form.password.errors %}
+							<p class="text-red-500 text-xs italic">{{ form.password.errors }}</p>
+						{% endif %} -->
+
+						<!-- <input
+							class="focus:outline-none"
+							type="password"
+							placeholder="Password" /> -->
+					</div>
+
+					<button
+						type="submit"
+						class="p-4 rounded-full text-white bg-gradient-to-br hover:bg-gradient-to-tl hover:transition-all hover:duration-300 transition-all duration-300 from-black to-orange-500">
+						Register
+					</button>
+				</form>
+			{% endif %}
+			<p class="text-neutral-500 text-center">
+				Already have an account?
+				<a class="text-orange-500" href="{% url 'stuco_app:login_user' %}">
+					click to log in
+				</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+			rel="stylesheet" />
+		<!-- Akhir Font -->
+
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Akhir Tailwind CSS -->
+
+		<!-- Icon -->
+		<script
+			src="https://kit.fontawesome.com/d7f673dfd5.js"
+			crossorigin="anonymous"></script>
+		<!-- Akhir Icon -->
+
+		<title>{% block title %}{% endblock %}</title>
+	</head>
+	<body>
+		<div class="flex">
+			<!-- Sisi Kiri -->
+			<div
+				class="w-full h-[calc(100vh-32px)] m-4 rounded-xl flex items-center justify-center bg-gradient-to-tl from-orange-200 via-orange-500 to-orange-200">
+				<img src="{% static 'img/logo-stuco-auth.svg' %}" alt="" />
+			</div>
+			<!-- Akhir Sisi Kiri -->
+
+			{% block auth %} {% endblock %}
+		</div>
+	</body>
+</html>

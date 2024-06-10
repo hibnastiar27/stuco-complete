@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+			rel="stylesheet" />
+		<!-- Akhir Font -->
+
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Akhir Tailwind CSS -->
+
+		<!-- Icon -->
+		<script
+			src="https://kit.fontawesome.com/d7f673dfd5.js"
+			crossorigin="anonymous"></script>
+		<!-- Akhir Icon -->
+
+		<link rel="stylesheet" href="{% static 'css/global.css' %}" />
+
+		<title>Mentoring Details</title>
+	</head>
+	<body>
+
+		{% include 'components/navbar.html' %}
+
+		<div class="-z-20 flex bg-black w-full h-[350px]"></div>
+
+		<section class="absolute -translate-y-[240px] z-10">
+			<div class="flex flex-col gap-4">
+				<div class="flex flex-col -z-10 gap-5 px-20">
+					<div class="flex gap-4 w-full justify-between">
+						<div class="flex items-center gap-4 w-3/4 justify-between">
+							<img
+								class="rounded-xl h-full w-[350px] object-cover border-8 border-white shadow-xl"
+								src="{% static 'img/mentor1.png' %}"
+								alt="" />
+							<div class="flex justify-between w-full">
+								<div
+									class="flex *:rounded-full *:flex gap-2 *:items-center *:p-3 *:bg-white *:text-xs">
+									<p>
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M6.87166 4.81327C7.29971 3.74615 7.51373 3.21259 7.86145 3.13864C7.95288 3.11919 8.04738 3.11919 8.13881 3.13864C8.48653 3.21259 8.70055 3.74615 9.1286 4.81327C9.37203 5.42013 9.49374 5.72355 9.72148 5.92993C9.78536 5.98782 9.8547 6.03937 9.92853 6.08387C10.1918 6.24252 10.5204 6.27195 11.1775 6.33081C12.29 6.43044 12.8463 6.48026 13.0162 6.79742C13.0514 6.86311 13.0753 6.93423 13.0869 7.00782C13.1432 7.36318 12.7343 7.73522 11.9165 8.4793L11.6893 8.68592C11.307 9.03379 11.1158 9.20773 11.0052 9.4248C10.9389 9.55501 10.8944 9.69524 10.8736 9.83988C10.8388 10.081 10.8948 10.3333 11.0068 10.838L11.0468 11.0183C11.2476 11.9233 11.348 12.3758 11.2226 12.5983C11.1101 12.7981 10.9027 12.926 10.6736 12.9369C10.4186 12.9491 10.0593 12.6563 9.34065 12.0707C8.86718 11.6849 8.63044 11.492 8.36764 11.4166C8.12747 11.3477 7.87279 11.3477 7.63262 11.4166C7.36982 11.492 7.13308 11.6849 6.65961 12.0707C5.94096 12.6563 5.58163 12.9491 5.32662 12.9369C5.09755 12.926 4.89019 12.7981 4.77761 12.5983C4.65228 12.3758 4.75268 11.9233 4.95348 11.0183L4.99348 10.838C5.10545 10.3333 5.16144 10.081 5.1267 9.83988C5.10585 9.69524 5.06138 9.55501 4.99504 9.4248C4.88446 9.20773 4.69328 9.03379 4.31092 8.68592L4.0838 8.4793C3.26594 7.73522 2.85701 7.36318 2.91333 7.00782C2.92499 6.93423 2.94891 6.86311 2.98409 6.79742C3.15396 6.48026 3.71021 6.43044 4.82272 6.33081C5.47991 6.27195 5.8085 6.24252 6.07173 6.08387C6.14556 6.03937 6.2149 5.98782 6.27878 5.92993C6.50652 5.72355 6.62824 5.42013 6.87166 4.81327Z"
+												fill="#2072F3"
+												stroke="#2072F3"
+												stroke-width="2" />
+										</svg>
+										Top Mentor
+									</p>
+									<p>
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M13.8931 3.07333C13.5526 2.73267 13.1483 2.46243 12.7033 2.27805C12.2584 2.09368 11.7814 1.99878 11.2998 1.99878C10.8181 1.99878 10.3412 2.09368 9.89618 2.27805C9.45121 2.46243 9.04692 2.73267 8.70642 3.07333L7.99975 3.78L7.29309 3.07333C6.60529 2.38553 5.67244 1.99914 4.69975 1.99914C3.72706 1.99914 2.79422 2.38553 2.10642 3.07333C1.41863 3.76112 1.03223 4.69397 1.03223 5.66666C1.03223 6.63935 1.41863 7.5722 2.10642 8.26L2.81309 8.96666L7.99975 14.1533L13.1864 8.96666L13.8931 8.26C14.2337 7.91949 14.504 7.51521 14.6884 7.07023C14.8727 6.62526 14.9676 6.14832 14.9676 5.66666C14.9676 5.185 14.8727 4.70807 14.6884 4.26309C14.504 3.81812 14.2337 3.41383 13.8931 3.07333Z"
+												fill="#FFA235" />
+										</svg>
+										Save
+									</p>
+								</div>
+								<button>
+									<svg
+										width="30"
+										height="30"
+										viewBox="0 0 30 30"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect width="30" height="30" rx="2" fill="white" />
+										<path
+											d="M19 11C20.5913 11 22.1174 11.6321 23.2426 12.7574C24.3679 13.8826 25 15.4087 25 17V24H21V17C21 16.4696 20.7893 15.9609 20.4142 15.5858C20.0391 15.2107 19.5304 15 19 15C18.4696 15 17.9609 15.2107 17.5858 15.5858C17.2107 15.9609 17 16.4696 17 17V24H13V17C13 15.4087 13.6321 13.8826 14.7574 12.7574C15.8826 11.6321 17.4087 11 19 11Z"
+											fill="black" />
+										<path d="M9 12H5V24H9V12Z" fill="black" />
+										<path
+											d="M7 9C8.10457 9 9 8.10457 9 7C9 5.89543 8.10457 5 7 5C5.89543 5 5 5.89543 5 7C5 8.10457 5.89543 9 7 9Z"
+											fill="black" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="w-1/4 bg-white shadow-xl rounded-2xl sticky">
+							<div class="flex flex-col">
+								<div class="flex *:p-4 *:border-b-4 *:w-full">
+									<button class="border-orange-500">Mentorship plans</button>
+									<button class="border-black/5">Session</button>
+								</div>
+							</div>
+							<div class="flex flex-col p-4 gap-4">
+								<div class="flex *:p-2 *:border *:w-full">
+									<button id="lite" class="rounded-l-xl">Lite</button>
+									<button id="standar" class="">Standart</button>
+									<button id="pro" class="rounded-r-xl">Pro</button>
+								</div>
+								<div class="flex flex-col gap-4">
+									<h1 class="text-4xl font-bold">
+										Rp150.000
+										<span class="font-normal text-base"> / month</span>
+									</h1>
+									<ul class="list-disc *:ml-5 flex flex-col gap-3">
+										<li>Regular calls, per agreement</li>
+										<li>Unlimited Q&A via chat</li>
+										<li>Expect responses in 3-4 days</li>
+									</ul>
+								</div>
+								<button
+									class="p-4 cursor-pointer bg-orange-500 text-white rounded-lg">
+									Apply Now
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex gap-4">
+						<div class="flex flex-col w-[350px] gap-3">
+							<h1 class="text-2xl font-semibold">Guy Hawkins</h1>
+							<p>ML Research Scientist and Founder @ APTA Technologies</p>
+							<p class="text-neutral-500">
+								ML Research Scientist gone Entrepreneur helping SWE, SDM, and
+								MLEs getting deeper into research
+							</p>
+						</div>
+						<div class="flex flex-col gap-3">
+							<h1 class="text-xl font-semibold">Skills</h1>
+							<div
+								class="flex gap-3 *:py-2 *:px-4 *:text-sm *:text-neutral-500 *:bg-neutral-100 *:rounded-full">
+								<button>Javascript</button>
+								<button>Typescript</button>
+								<button>React</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col w-3/4 gap-3 pb-10">
+						<h1 class="text-2xl font-semibold">About</h1>
+
+						<p>
+							As a mentor with a background in both research and industry, I
+							have a wealth of experience of 10+ years to draw upon when guiding
+							individuals through the field of machine learning. My focus is on
+							helping experienced software engineers transition into ML/DS, as
+							well as assisting machine learning engineers in their research
+							endeavors, and getting juniors on the right track for their
+							career.
+						</p>
+
+						<p>
+							A typical mentorship session with me will begin with a review of
+							your career, skills, and goals. From there, we will assess the
+							steps and skills needed to achieve those goals and develop a
+							long-term plan and specific projects to support your overall
+							objective
+						</p>
+
+						<p>
+							In addition to my expertise in machine learning, I am also
+							available to discuss topics such as product-market-fit,
+							validation, business models, start-up fundraising, and
+							bootstrapping. I am currently co-founder and principal engineer at
+							an early-stage machine learning start-up, and have a strong
+							understanding of the challenges and considerations involved in
+							this stage of a company's development.
+						</p>
+
+						<p>
+							Throughout my career, I have held a number of roles that have
+							allowed me to build a diverse skill set. These include machine
+							learning research scientist in the financial sector and Ph.D. in
+							machine learning algorithms for software engineering and network
+							analysis. I have also completed data science consulting projects
+							on the side.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- FOOTER -->
+			{% include 'components/footer.html' %}
+			<!-- AKHIR FOOTER -->
+		</section>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="{% static 'js/navbar.js' %}"></script>
+	</body>
+</html>

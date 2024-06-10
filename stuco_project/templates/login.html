@@ -1,0 +1,103 @@
+{% extends 'base-auth.html' %} {% load static %} 
+
+{% block title %} Login {% endblock %}
+
+{% block auth %}
+
+<div class="w-full flex justify-center items-center">
+	<div class="flex flex-col gap-4">
+		<div class="head">
+			<h1 class="text-3xl font-bold">Hello Again!</h1>
+			<p class="">Welcome Back!</p>
+		</div>
+		<div class="flex flex-col gap-3">
+			<form
+				action="{% url 'stuco_app:login_user' %}"
+				method="post"
+				class="flex flex-col gap-3">
+				{% csrf_token %}
+				<div class="p-4 flex gap-2 bg-white rounded-full border">
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.3">
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M1.5 5.25L2.25 4.5H21.75L22.5 5.25V18.75L21.75 19.5H2.25L1.5 18.75V5.25ZM3 6.8025V18H21V6.804L12.465 13.35H11.55L3 6.8025ZM19.545 6H4.455L12 11.8035L19.545 6Z"
+								fill="#333333" />
+						</g>
+					</svg>
+
+					<input
+						name="username"
+						class="focus:outline-none"
+						type="text"
+						placeholder="Input Username" />
+				</div>
+
+				<div class="p-4 flex gap-2 bg-white rounded-full border">
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.3">
+							<path
+								d="M20 12C20 10.897 19.103 10 18 10H17V7C17 4.243 14.757 2 12 2C9.243 2 7 4.243 7 7V10H6C4.897 10 4 10.897 4 12V20C4 21.103 4.897 22 6 22H18C19.103 22 20 21.103 20 20V12ZM9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7V10H9V7Z"
+								fill="#333333" />
+						</g>
+					</svg>
+
+					<input
+						name="password"
+						class="focus:outline-none"
+						type="password"
+						placeholder="Input Password" />
+				</div>
+
+				<a class="text-orange-500 text-end" href="">Forgot Password?</a>
+
+				<button
+					value="Login"
+					class="p-4 rounded-full text-white bg-gradient-to-br hover:bg-gradient-to-tl hover:transition-all hover:duration-300 transition-all duration-300 from-black to-orange-500"
+					type="submit">
+					Login
+				</button>
+			</form>
+
+			<div class="flex justify-center gap-5">
+				<button>
+					<img
+						class="w-[34px]"
+						src="{% static 'img/icon-google.svg' %}"
+						alt="google" />
+				</button>
+
+				<button>
+					<img
+						class="w-[34px]"
+						src="{% static 'img/icon-facebook.svg' %}"
+						alt="fb" />
+				</button>
+
+				<button>
+					<img class="w-[34px]" src="{% static 'img/icon-x.svg' %}" alt="x" />
+				</button>
+			</div>
+
+			<p class="text-neutral-500 text-center">
+				Don't have an account yet?
+				<a class="text-orange-500" href="{% url 'stuco_app:register' %}"
+					>click to register</a
+				>
+			</p>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

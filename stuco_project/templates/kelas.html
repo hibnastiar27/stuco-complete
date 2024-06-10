@@ -1,0 +1,375 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block title %} Kelas {% endblock %} 
+
+{% block konten %}
+<main class="py-20">
+	<section class="p-4 sm:px-20 sm:py-10">
+		<h1 class="text-2xl font-semibold">
+			<span class="text-orange-500 text-3xl">Browse Kelas</span> <br />
+			Sesuai Minat & Bakat Kamu
+		</h1>
+	</section>
+
+	<section class="grid grid-cols-12 mx-20 gap-3">
+		<div
+			class="col-start-1 col-end-3 filter hidden sm:flex gap-5 flex-col p-5 bg-white rounded-lg shadow-xl border">
+			<div class="flex flex-col gap-2">
+				<h1 class="text-xl font-semibold">Sort</h1>
+				<div class="flex flex-col gap-4 text-sm">
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="freemium" />
+						<label for="freemium">Freemium (Rp 0)</label>
+					</div>
+
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="premium" />
+						<label for="premium">Premium</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col gap-2">
+				<h1 class="text-xl font-semibold">Category</h1>
+				<div class="flex flex-col gap-4 text-sm">
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="all" />
+						<label for="all">All</label>
+					</div>
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="softskill" />
+						<label for="softskill">Soft Skiill</label>
+					</div>
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="hardskill" />
+						<label for="hardskill">Hard Skill</label>
+					</div>
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="design" />
+						<label for="design">Design</label>
+					</div>
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="coding" />
+						<label for="coding">Coding</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col gap-2">
+				<h1 class="text-xl font-semibold">Sort</h1>
+				<div class="flex flex-col gap-4 text-sm">
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="baru" />
+						<label for="baru">Baru Rilis</label>
+					</div>
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="popular" />
+						<label for="popular">Terpopuler</label>
+					</div>
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="promo" />
+						<label for="promo">Sedang Promo</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col gap-2">
+				<h1 class="text-xl font-semibold">Sort</h1>
+				<div class="flex flex-col gap-4 text-sm">
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="Beginer" />
+						<label for="Beginer">Beginner Friendly </label>
+					</div>
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="intermediate" />
+						<label for="intermediate">Intermediate</label>
+					</div>
+					<div class="flex gap-2">
+						<input
+							class="accent-orange-600 w-6"
+							type="checkbox"
+							name=""
+							id="all level" />
+						<label for="all level">All Levels</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-start-3 col-end-13">
+			<div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+				<a
+					href="{% url 'stuco_app:kelas_detail' %}"
+					class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-00.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">Leadership and Management</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</a>
+				<div class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-01.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">User Experience (UX) Design</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</div>
+				<div class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-02.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">
+							Web Development Laravel 11: Multi-Purpose Company Profile
+						</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</div>
+				<div class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-03.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">Web Design for Beginners</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-04.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">
+							Data Structures and Algorithms
+						</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</div>
+				<div class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-05.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">Machine Learning A-Z</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</div>
+				<div class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-06.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">User Experience (UX) Design</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</div>
+				<div class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-07.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">Leadership and Management</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-05.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">
+							Data Structures and Algorithms
+						</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</div>
+				<div class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-06.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">Machine Learning A-Z</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</div>
+				<div class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-03.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">User Experience (UX) Design</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</div>
+				<div class="card flex flex-col rounded-xl bg-white shadow-xl">
+					<img
+						class="rounded-t-xl"
+						src="{% static 'img/katalog-04.png' %}"
+						alt="" />
+					<div class="p-4 flex flex-col gap-2 text-xs">
+						<h1 class="font-bold text-base">Leadership and Management</h1>
+						<span class="flex gap-2">
+							<p class="text-red-500 line-through">Rp 550.000</p>
+							<p>Rp 220.000</p>
+						</span>
+						<div class="flex items-center gap-2">
+							<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+							<p>(10)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="my-4">
+				<div
+					id="pagination-container"
+					class="flex justify-center mt-4"></div>
+			</div>
+		</div>
+	</section>
+</main>
+{% endblock %}

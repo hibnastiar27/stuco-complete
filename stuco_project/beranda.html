@@ -1,0 +1,682 @@
+{% extends 'base.html' %} 
+
+{% load static %} 
+
+{% block title %} Beranda {% endblock %} 
+
+{% block konten %}
+
+<!-- HERO -->
+<section data-aos="fade-right" class="pt-20">
+	<div
+		class="flex flex-col px-5 py-20 sm:w-fit sm:py-10 sm:m-auto sm:h-full items-center justify-center">
+		<div class="flex flex-col gap-6">
+			<h1 class="text-5xl font-bold text-center">
+				Temukan <span class="text-orange-500"> Bakat Minatmu</span> <br />
+				Bersama Kami!
+			</h1>
+			<p class="text-center">
+				Temukan dan kembangkan skill kamu di sini bersama <br />
+				Puluhan Ribu Member Lainnya dan Mentor yang berpengalaman.
+			</p>
+
+			<div class="flex flex-col gap-4 sm:flex-row *:bg-white/60 *:shadow-2xl">
+				<div
+					class="flex items-center sm:w-fit sm:gap-2 gap-4 sm:flex-col sm:px-10 sm:py-5 p-4 w-full sm:fit rounded-2xl border border-neutral-100">
+					<h2 class="text-5xl sm:text-5xl font-bold text-orange-500">1000+</h2>
+					<p>Happy Students</p>
+				</div>
+				<div
+					class="flex items-center sm:w-fit sm:gap-2 gap-4 sm:flex-col sm:px-10 sm:py-5 p-4 w-full sm:fit rounded-2xl border border-neutral-100">
+					<h2 class="text-5xl sm:text-5xl font-bold text-orange-500">50</h2>
+					<p>All Class</p>
+				</div>
+				<div
+					class="flex items-center sm:w-fit sm:gap-2 gap-4 sm:flex-col sm:px-10 sm:py-5 p-4 w-full sm:fit rounded-2xl border border-neutral-100">
+					<h2 class="text-5xl sm:text-5xl font-bold text-orange-500">30</h2>
+					<p>Mentors</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<img
+		class="absolute sm:-top-10 top-0 -z-10 sm:w-full h-full sm:h-[100%] object-cover"
+		src="{% static 'img/line.svg'  %}"
+		alt="" />
+</section>
+<!-- HERO -->
+
+<!-- POPULAR -->
+<section>
+	<div class="sm:py-10 px-5 py-5 flex flex-col items-center gap-6">
+		<h1 class="text-3xl font-bold text-center">
+			POPULAR <span class="text-orange-500">CATEGORY</span>
+		</h1>
+
+		<div class="flex flex-col md:flex-row gap-4 w-full md:w-fit">
+			<div
+				class="flex items-center shadow-xl border border-neutral-100 p-5 rounded-xl gap-4">
+				<div class="p-3 rounded-2xl bg-orange-500/5">
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+							stroke="#FFA235"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path
+							d="M3 9H21"
+							stroke="#FFA235"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path
+							d="M9 21V9"
+							stroke="#FFA235"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</div>
+				<p class="font-bold">
+					UI/UX & <br />
+					Web Design
+				</p>
+			</div>
+
+			<div
+				class="flex items-center shadow-xl border border-neutral-100 p-5 rounded-xl gap-4">
+				<div class="p-3 rounded-2xl bg-orange-500/5">
+					<svg
+						width="20"
+						height="23"
+						viewBox="0 0 20 23"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_769_7110)">
+							<path
+								d="M14.5 8.40002L5.5 3.21002"
+								stroke="#FFA235"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M19 15V7.00002C18.9996 6.6493 18.9071 6.30483 18.7315 6.00119C18.556 5.69754 18.3037 5.44539 18 5.27002L11 1.27002C10.696 1.09449 10.3511 1.00208 10 1.00208C9.64893 1.00208 9.30404 1.09449 9 1.27002L2 5.27002C1.69626 5.44539 1.44398 5.69754 1.26846 6.00119C1.09294 6.30483 1.00036 6.6493 1 7.00002V15C1.00036 15.3508 1.09294 15.6952 1.26846 15.9989C1.44398 16.3025 1.69626 16.5547 2 16.73L9 20.73C9.30404 20.9056 9.64893 20.998 10 20.998C10.3511 20.998 10.696 20.9056 11 20.73L18 16.73C18.3037 16.5547 18.556 16.3025 18.7315 15.9989C18.9071 15.6952 18.9996 15.3508 19 15Z"
+								stroke="#FFA235"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M1.27002 5.96002L10 11.01L18.73 5.96002"
+								stroke="#FFA235"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M10 21.08V11"
+								stroke="#FFA235"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+						</g>
+						<defs>
+							<clipPath id="clip0_769_7110">
+								<rect width="20" height="23" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<p class="font-bold">
+					Website <br />
+					Development
+				</p>
+			</div>
+
+			<div
+				class="flex items-center shadow-xl border border-neutral-100 p-5 rounded-xl gap-4">
+				<div class="p-3 rounded-2xl bg-orange-500/5">
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 8C16.9706 8 21 6.65685 21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5C3 6.65685 7.02944 8 12 8Z"
+							stroke="#FFA235"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path
+							d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12"
+							stroke="#FFA235"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path
+							d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5"
+							stroke="#FFA235"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</div>
+				<p class="font-bold">
+					Mobile <br />
+					Development
+				</p>
+			</div>
+
+			<div
+				class="flex items-center shadow-xl border border-neutral-100 p-5 rounded-xl gap-4">
+				<div class="p-3 rounded-2xl bg-orange-500/5">
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M17 2H7C5.89543 2 5 2.89543 5 4V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V4C19 2.89543 18.1046 2 17 2Z"
+							stroke="#FFA235"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path
+							d="M12 18H12.01"
+							stroke="#FFA235"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</div>
+				<p class="font-bold">
+					Data <br />
+					Analyst
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- AKHIR POPULAR -->
+
+<!-- KATALOG -->
+<section>
+	<div class="sm:py-10 px-5 py-10 flex flex-col items-center gap-6">
+		<div class="flex flex-col gap-2 text-center">
+			<h1 class="text-3xl font-bold">
+				KATALOG <span class="text-orange-500">KELAS</span>
+			</h1>
+			<p>
+				Pilih Kelas sesuai bidang yang kamu minati dan belajar bersama
+				Mentor-mentor berpengalaman
+			</p>
+		</div>
+
+		<div
+			class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center sm:px-20 w-full md:w-fit">
+			<div class="flex flex-col rounded-xl bg-white shadow-xl">
+				<img
+					class="rounded-t-xl"
+					src="{% static 'img/katalog-00.png' %}"
+					alt="" />
+				<div class="p-4 flex flex-col gap-2 text-xs">
+					<h1 class="font-bold text-base">Leadership and Management</h1>
+					<span class="flex gap-2">
+						<p class="text-red-500 line-through">Rp 550.000</p>
+						<p>Rp 220.000</p>
+					</span>
+					<div class="flex items-center gap-2">
+						<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+						<p>(10)</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl">
+				<img
+					class="rounded-t-xl"
+					src="{% static 'img/katalog-01.png' %}"
+					alt="" />
+				<div class="p-4 flex flex-col gap-2 text-xs">
+					<h1 class="font-bold text-base">User Experience (UX) Design</h1>
+					<span class="flex gap-2">
+						<p class="text-red-500 line-through">Rp 550.000</p>
+						<p>Rp 220.000</p>
+					</span>
+					<div class="flex items-center gap-2">
+						<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+						<p>(10)</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl">
+				<img
+					class="rounded-t-xl"
+					src="{% static 'img/katalog-02.png' %}"
+					alt="" />
+				<div class="p-4 flex flex-col gap-2 text-xs">
+					<h1 class="font-bold text-base">
+						Web Development Laravel 11: Multi-Purpose Company Profile
+					</h1>
+					<span class="flex gap-2">
+						<p class="text-red-500 line-through">Rp 550.000</p>
+						<p>Rp 220.000</p>
+					</span>
+					<div class="flex items-center gap-2">
+						<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+						<p>(10)</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl">
+				<img
+					class="rounded-t-xl"
+					src="{% static 'img/katalog-03.png' %}"
+					alt="" />
+				<div class="p-4 flex flex-col gap-2 text-xs">
+					<h1 class="font-bold text-base">Web Design for Beginners</h1>
+					<span class="flex gap-2">
+						<p class="text-red-500 line-through">Rp 550.000</p>
+						<p>Rp 220.000</p>
+					</span>
+					<div class="flex items-center gap-2">
+						<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+						<p>(10)</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col rounded-xl bg-white shadow-xl">
+				<img
+					class="rounded-t-xl"
+					src="{% static 'img/katalog-04.png' %}"
+					alt="" />
+				<div class="p-4 flex flex-col gap-2 text-xs">
+					<h1 class="font-bold text-base">Data Structures and Algorithms</h1>
+					<span class="flex gap-2">
+						<p class="text-red-500 line-through">Rp 550.000</p>
+						<p>Rp 220.000</p>
+					</span>
+					<div class="flex items-center gap-2">
+						<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+						<p>(10)</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl">
+				<img
+					class="rounded-t-xl"
+					src="{% static 'img/katalog-05.png' %}"
+					alt="" />
+				<div class="p-4 flex flex-col gap-2 text-xs">
+					<h1 class="font-bold text-base">Machine Learning A-Z</h1>
+					<span class="flex gap-2">
+						<p class="text-red-500 line-through">Rp 550.000</p>
+						<p>Rp 220.000</p>
+					</span>
+					<div class="flex items-center gap-2">
+						<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+						<p>(10)</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl">
+				<img
+					class="rounded-t-xl"
+					src="{% static 'img/katalog-06.png' %}"
+					alt="" />
+				<div class="p-4 flex flex-col gap-2 text-xs">
+					<h1 class="font-bold text-base">User Experience (UX) Design</h1>
+					<span class="flex gap-2">
+						<p class="text-red-500 line-through">Rp 550.000</p>
+						<p>Rp 220.000</p>
+					</span>
+					<div class="flex items-center gap-2">
+						<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+						<p>(10)</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl">
+				<img
+					class="rounded-t-xl"
+					src="{% static 'img/katalog-07.png' %}"
+					alt="" />
+				<div class="p-4 flex flex-col gap-2 text-xs">
+					<h1 class="font-bold text-base">Leadership and Management</h1>
+					<span class="flex gap-2">
+						<p class="text-red-500 line-through">Rp 550.000</p>
+						<p>Rp 220.000</p>
+					</span>
+					<div class="flex items-center gap-2">
+						<img src="{% static 'img/Bintang04.svg' %}" alt="" />
+						<p>(10)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button
+			class="hover:-translate-y-3 transition-all duration-300 bg-orange-500 py-3 px-4 text-xs rounded-lg text-white font-medium shadow-lg shadow-orange-500/25">
+			LIHAT LEBIH BANYAK
+		</button>
+	</div>
+</section>
+<!-- AKHIR KATALOG -->
+
+<!-- ALUR BELAJAR -->
+<section>
+	<div class="sm:py-10 px-5 py-10 flex flex-col items-center gap-6">
+		<div class="flex flex-col gap-2 text-center">
+			<h1 class="text-3xl font-bold">
+				ALUR <span class="text-orange-500">BELAJAR</span>
+			</h1>
+			<p>Piilih Belajar yang sesuai dengan minat dan bakat kalian</p>
+		</div>
+
+		<div
+			class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center sm:px-20 w-full md:w-fit">
+			<div class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-4 border">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-01.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">Full-Stack JavaScript Developer</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-4 border">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-02.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">
+							No Code Webflow Website Developer
+						</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-4 border">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-03.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">UI/UX Designer</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-4 border">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-04.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">Freelancer UI/UX Designer</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+
+			<div class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-4 border">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-05.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">Mobile UI Designer</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-4 border">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-06.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">Product Manager</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-4 border">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-07.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">3D Designer</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+			<div class="flex flex-col rounded-xl bg-white shadow-xl p-4 gap-4 border">
+				<div class="flex gap-2 items-center">
+					<img
+						class="rounded-xl w-[65px] h-[65px] object-cover"
+						src="{% static 'img/roadmap-08.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">JavaScript Back-End Developer</h1>
+						<p class="text-neutral-500">Tersedia 14 Kelas</p>
+					</div>
+				</div>
+				<button class="bg-black text-xs rounded-lg text-white py-3">
+					Start Journey
+				</button>
+			</div>
+		</div>
+
+		<button
+			class="hover:-translate-y-3 transition-all duration-300 bg-orange-500 py-3 px-4 text-xs rounded-lg text-white font-medium shadow-lg shadow-orange-500/25">
+			LIHAT LEBIH BANYAK
+		</button>
+	</div>
+</section>
+<!-- AKHIR ALUR BELAJAR -->
+
+<!-- TESTIMONI -->
+<section>
+	<div class="sm:py-10 px-5 py-10 flex flex-col items-center gap-6">
+		<div class="flex flex-col gap-2 text-center">
+			<h1 class="text-3xl font-bold">
+				KATA MEREKA <span class="text-orange-500">TENTANG KAMI</span>
+			</h1>
+			<p>Cerita Gembira dari para Students</p>
+		</div>
+
+		<div
+			class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 justify-center sm:px-20 w-full md:w-fit">
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-5 gap-4 border border-neutral-100">
+				<div class="flex gap-4 items-center">
+					<img
+						class="rounded-full w-[50px] h-[50px] object-cover"
+						src="{% static 'img/katalog-00.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">Aria</h1>
+						<p class="text-neutral-500">Web Development</p>
+					</div>
+				</div>
+				<p class="text-sm text-neutral-600">
+					"Kursus ini sangat membantu saya memahami dasar-dasar pengembangan
+					web. Instruktur sangat jelas dalam menjelaskan setiap konsep dan
+					memberikan banyak contoh praktis yang sangat berguna."
+				</p>
+			</div>
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-5 gap-4 border border-neutral-100">
+				<div class="flex gap-4 items-center">
+					<img
+						class="rounded-full w-[50px] h-[50px] object-cover"
+						src="{% static 'img/katalog-01.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">Budi</h1>
+						<p class="text-neutral-500">Data Science</p>
+					</div>
+				</div>
+				<p class="text-sm text-neutral-600">
+					"Materinya sangat detail dan mudah diikuti. Sangat direkomendasikan!
+					Saya merasa lebih percaya diri dalam melakukan analisis data dan
+					membuat model prediktif setelah mengikuti kursus ini."
+				</p>
+			</div>
+			<div
+				class="flex flex-col rounded-xl bg-white shadow-xl p-5 gap-4 border border-neutral-100">
+				<div class="flex gap-4 items-center">
+					<img
+						class="rounded-full w-[50px] h-[50px] object-cover"
+						src="{% static 'img/katalog-02.png' %}"
+						alt="" />
+					<div class="flex flex-col text-xs">
+						<h1 class="font-bold text-base">Kirana</h1>
+						<p class="text-neutral-500">Digital Marketing</p>
+					</div>
+				</div>
+				<p class="text-sm text-neutral-600">
+					"Sangat informatif dan bermanfaat untuk karir saya di bidang
+					marketing. Strategi yang diajarkan sangat relevan dengan tren pasar
+					saat ini dan membantu saya meningkatkan kampanye digital."
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- AKHIR TESTIMONI -->
+
+<!-- FAQ -->
+<section>
+	<div class="sm:py-10 px-5 sm:px-24 py-10 flex flex-col gap-6">
+		<div class="flex flex-col gap-2">
+			<h1 class="text-3xl font-bold">
+				PERTANYAAN <span class="text-orange-500">UMUM</span>
+			</h1>
+		</div>
+
+		<div class="grid sm:grid-cols-1 gap-4 w-full">
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="faq-question cursor-pointer flex font-bold justify-between p-3">
+					<h1>Apakah Ini Berlangganan ?</h1>
+					<p>+</p>
+				</div>
+				<div class="content flex justify-between p-4 hidden">
+					<p>
+						Tidak. Kamu hanya cukup membayar sekali saja untuk akses SELAMANYA
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="faq-question cursor-pointer flex font-bold justify-between p-3">
+					<h1>Bagaimana Sistem Belajarnya ?</h1>
+					<p>+</p>
+				</div>
+				<div class="content flex justify-between p-4 hidden">
+					<p>
+						Metode belajar menggunakan Video secara online. Jika kamu kesulitan
+						dalam mempelajarinya, sudah kami sediakan mentor yang siap untuk
+						menjawab pertanyaan-pertanyaan dari kamu. Tidak ada Live Meeting dan
+						Konsultasi only via chat
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="faq-question cursor-pointer flex font-bold justify-between p-3">
+					<h1>Apakah Ada Mentornya ?</h1>
+					<p>+</p>
+				</div>
+				<div class="content flex justify-between p-4 hidden">
+					<p>Ada dong 😁. Kamu pun bisa tanya-tanya mentor kami</p>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="faq-question cursor-pointer flex font-bold justify-between p-3">
+					<h1>Apakah Boleh Share Akun Kepada Orang Lain ?</h1>
+					<p>+</p>
+				</div>
+				<div class="content flex justify-between p-4 hidden">
+					<p>
+						Tidak bisa! Satu Akun hanya untuk satu orang. Mari dukung kreator
+						Indonesia untuk bebas dari plagiarisme
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="faq-question cursor-pointer flex font-bold justify-between p-3">
+					<h1>Saya Tidak Punya Softwarenya, Apakah Disediakan?</h1>
+					<p>+</p>
+				</div>
+				<div class="content flex justify-between p-4 hidden">
+					<p>
+						Tidak bisa! Satu Akun hanya untuk satu orang. Mari dukung kreator
+						Indonesia untuk bebas dari plagiarisme
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="faq-question cursor-pointer flex font-bold justify-between p-3">
+					<h1>
+						Apakah Ketika Saya Sudah Lama Tidak Mengakses Kelas, Materi Masih
+						Bisa Saya Akses ?
+					</h1>
+					<p>+</p>
+				</div>
+				<div class="content flex justify-between p-4 hidden">
+					<p>
+						Masih bisa! Karena akses kelas disini, Lifetime*. Jadi, kamu bisa
+						akses kelas nya kapanpun dan dimanapun
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- AKHIR FAQ -->
+{% endblock %}

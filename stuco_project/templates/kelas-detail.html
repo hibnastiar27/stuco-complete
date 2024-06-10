@@ -1,0 +1,321 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block title %} Kelas Detail {% endblock %} 
+
+{% block konten %}
+<section class="sm:pt-20">
+	<div class="flex flex-col max-w-screen-md m-auto text-center py-10 gap-5">
+		<h1 class="font-bold text-3xl">
+			Web Development Laravel 11: <br />
+			Multi-Purpose Company Profile
+		</h1>
+		<div class="flex justify-between">
+			<div class="flex flex-col">
+				<p class="font-semibold text-xl text-orange-500">Tingkatan</p>
+				<p>Beginner</p>
+			</div>
+			<div class="flex flex-col">
+				<p class="font-semibold text-xl text-orange-500">Durasi</p>
+				<p>04h 42m</p>
+			</div>
+			<div class="flex flex-col">
+				<p class="font-semibold text-xl text-orange-500">Member</p>
+				<p>25</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="grid grid-cols-12 px-20 gap-5">
+		<div class="col-start-1 col-end-9">
+			<img
+				class="rounded-xl w-full"
+				src="{% static 'img/katalog-03.png' %}"
+				alt="" />
+		</div>
+		<div class="col-start-9 col-end-13 border rounded-lg shadow-xl">
+			<h1
+				class="font-bold p-4 bg-neutral-100 text-black text-center rounded-t-lg">
+				Preview Materi
+			</h1>
+			<div class="flex justify-between p-4 items-center">
+				<div class="flex items-center gap-2">
+					<img
+						class="rounded-md w-32"
+						src="{% static 'img/katalog-03.png' %}"
+						alt="" />
+					<p>Kenapa Harus Belajar Disini</p>
+				</div>
+				<p>16:00</p>
+			</div>
+			<div class="flex justify-between p-4 items-center">
+				<div class="flex items-center gap-2">
+					<img
+						class="rounded-md w-32"
+						src="{% static 'img/katalog-03.png' %}"
+						alt="" />
+					<p>Pengenalan Laravel 11</p>
+				</div>
+				<p>18:00</p>
+			</div>
+			<div class="flex justify-between p-4 items-center">
+				<div class="flex items-center gap-2">
+					<img
+						class="rounded-md w-32"
+						src="{% static 'img/katalog-03.png' %}"
+						alt="" />
+					<p>Instalasi dan Konfigurasi Laravel</p>
+				</div>
+				<p>24:00</p>
+			</div>
+			<div
+				class="flex font-semibold text-xl justify-center gap-2 p-4 bg-neutral-100 text-black text-center">
+				<p class="text-red-500 line-through">Rp 550.000</p>
+				<p>Rp 220.000</p>
+			</div>
+			<button class="rounded-b-lg bg-orange-500 text-white py-4 w-full">
+				Lanjut Belajar
+			</button>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="flex flex-col p-20 gap-6">
+		<div class="flex flex-col gap-3">
+			<h1 class="text-3xl font-semibold">Tentang Kelas ini</h1>
+			<p>
+				Melalui kelas ini, kamu akan belajar cara menggunakan berbagai fitur
+				dan efek CapCut untuk membuat video yang menarik dan profesional.
+				Materi pelajaran mencakup teknik dasar seperti memotong,
+				menggabungkan klip, menambahkan musik, efek visual, hingga animasi
+				teks. Selain itu, kelas ini juga memberikan wawasan tentang konsep
+				editing yang efektif dan efisien.
+			</p>
+		</div>
+		<div class="flex gap-2">
+			<div class="flex flex-col gap-3">
+				<h1 class="text-3xl font-semibold">Target Kelas Ini</h1>
+				<ol class="list-decimal *:ml-7">
+					<li>Memahami berbagai macam fitur yang ada di CapCut</li>
+					<li>Memahami effects yang ada di CapCut</li>
+					<li>Memahami penggunaan audio, music dan sound effects</li>
+					<li>Memahami keyframe</li>
+					<li>Memahami Transition</li>
+					<li>Memahami Color Grading dengan CapCut</li>
+					<li>Memahami berbagai macam teknik editing dengan CapCut</li>
+				</ol>
+			</div>
+
+			<div class="w-1 bg-gradient-to-b from-orange-500 to-orange-50"></div>
+
+			<div class="flex flex-col gap-3">
+				<h1 class="text-3xl font-semibold">Cocok untuk</h1>
+				<ol class="list-decimal *:ml-7">
+					<li>Yang baru terjun di dalam dunia editing video</li>
+					<li>
+						Bagi konten kreator yang ingin meningkatkan kualitas videonya
+					</li>
+					<li>Bagi video editor yang ingin beralih ke software capcut</li>
+					<li>
+						Bagi kalian yang ingin belajar editing video dengan mudah,
+						efektif dan efisien.
+					</li>
+				</ol>
+			</div>
+
+			<div class="w-1 bg-gradient-to-b from-orange-500 to-orange-50"></div>
+
+			<div class="flex flex-col gap-3">
+				<h1 class="text-3xl font-semibold">Aplikasi yang Digunakan</h1>
+				<ol class="list-decimal *:ml-7">
+					<li>Memahami berbagai macam fitur yang ada di CapCut</li>
+					<li>Memahami effects yang ada di CapCut</li>
+					<li>Memahami penggunaan audio, music dan sound effects</li>
+					<li>Memahami keyframe</li>
+					<li>Memahami Transition</li>
+					<li>Memahami Color Grading dengan CapCut</li>
+					<li>Memahami berbagai macam teknik editing dengan CapCut</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="flex flex-col px-20 pb-20 gap-6">
+		<div class="flex flex-col gap-3">
+			<h1 class="text-3xl font-semibold">Kurikulum Kelas</h1>
+			<p>Materi-materi Berkualitas dan Disusun secara Terstuktur</p>
+		</div>
+
+		<div class="grid sm:grid-cols-1 gap-4 w-full">
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="silabus cursor-pointer flex font-bold justify-between p-3">
+					<h1>Pengantar dan Persiapan</h1>
+					<p>+</p>
+				</div>
+				<div
+					class="content hidden flex flex-col justify-between *:p-4 *:bg-neutral-100">
+					<div class="flex justify-between">
+						<a href="#">Pengenalan Laravel 11</a>
+						<p>30 menit</p>
+					</div>
+					<div class="flex justify-between">
+						<p>Instalasi dan Konfigurasi Laravel</p>
+						<p>30 menit</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="silabus cursor-pointer flex font-bold justify-between p-3">
+					<h1>Dasar-Dasar Laravel</h1>
+					<p>+</p>
+				</div>
+				<div
+					class="content hidden flex flex-col justify-between *:p-4 *:bg-neutral-100">
+					<div class="flex justify-between">
+						<p>Struktur Proyek Laravel</p>
+						<p>30 menit</p>
+					</div>
+					<div class="flex justify-between">
+						<p>Routing dan Middleware</p>
+						<p>30 menit</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="silabus cursor-pointer flex font-bold justify-between p-3">
+					<h1>Database dan Model</h1>
+					<p>+</p>
+				</div>
+				<div
+					class="content hidden flex flex-col justify-between *:p-4 *:bg-neutral-100">
+					<div class="flex justify-between">
+						<p>Database</p>
+						<p>30 menit</p>
+					</div>
+					<div class="flex justify-between">
+						<p>Eloquent ORM</p>
+						<p>30 menit</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="silabus cursor-pointer flex font-bold justify-between p-3">
+					<h1>Autentikasi dan Otorisasi</h1>
+					<p>+</p>
+				</div>
+				<div
+					class="content hidden flex flex-col justify-between *:p-4 *:bg-neutral-100">
+					<div class="flex justify-between">
+						<p>Authentication</p>
+						<p>30 menit</p>
+					</div>
+					<div class="flex justify-between">
+						<p>Authorization</p>
+						<p>30 menit</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="silabus cursor-pointer flex font-bold justify-between p-3">
+					<h1>Operasi CRUD</h1>
+					<p>+</p>
+				</div>
+				<div
+					class="content hidden flex flex-col justify-between *:p-4 *:bg-neutral-100">
+					<div class="flex justify-between">
+						<p>CRUD Operations</p>
+						<p>30 menit</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="silabus cursor-pointer flex font-bold justify-between p-3">
+					<h1>Templating dan Validasi</h1>
+					<p>+</p>
+				</div>
+				<div
+					class="content hidden flex flex-col justify-between *:p-4 *:bg-neutral-100">
+					<div class="flex justify-between">
+						<p>Blade Templating Engine</p>
+						<p>30 menit</p>
+					</div>
+					<div class="flex justify-between">
+						<p>Form Handling</p>
+						<p>30 menit</p>
+					</div>
+					<div class="flex justify-between">
+						<p>Validasi</p>
+						<p>30 menit</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="silabus cursor-pointer flex font-bold justify-between p-3">
+					<h1>Manajemen File dan API</h1>
+					<p>+</p>
+				</div>
+				<div
+					class="content hidden flex flex-col justify-between *:p-4 *:bg-neutral-100">
+					<div class="flex justify-between">
+						<p>File Upload dan Management</p>
+						<p>30 menit</p>
+					</div>
+					<div class="flex justify-between">
+						<p>API Development</p>
+						<p>30 menit</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="silabus cursor-pointer flex font-bold justify-between p-3">
+					<h1>Testing dan Deployment</h1>
+					<p>+</p>
+				</div>
+				<div
+					class="content hidden flex flex-col justify-between *:p-4 *:bg-neutral-100">
+					<div class="flex justify-between">
+						<p>Testing dan Debugging</p>
+						<p>30 menit</p>
+					</div>
+					<div class="flex justify-between">
+						<p>Deployment dan Maintenance</p>
+						<p>30 menit</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col bg-white shadow-xl rounded-lg border">
+				<div
+					class="silabus cursor-pointer flex font-bold justify-between p-3">
+					<h1>Studi Kasus dan Optimisasi</h1>
+					<p>+</p>
+				</div>
+				<div
+					class="content hidden flex flex-col justify-between *:p-4 *:bg-neutral-100">
+					<div class="flex justify-between">
+						<p>
+							Studi Kasus: Multi-Purpose Company Profile, Optimisasi dan
+							Keamanan Aplikas
+						</p>
+						<p>30 menit</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
