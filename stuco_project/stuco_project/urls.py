@@ -24,4 +24,7 @@ urlpatterns = [
     path('logout/', views.user_logout, name='logout'),
     path('admin/', admin.site.urls),
     path('dashboard/', views.dashboard, name='dashboard'),
+    path('manage_course/', views.manage_course, name='manage_course'),
+    
+    path('accounts/', include('allauth.urls')),    
 ]

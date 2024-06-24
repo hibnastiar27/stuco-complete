@@ -79,3 +79,8 @@ def user_logout(request):
 @login_required
 def dashboard(req):
   return render(req, 'dashboard.html', {'halaman_aktif': 'dashboard'})
+
+
+@login_required
+def manage_course(req):
+  return render(req, 'dashboard.html', {'halaman_aktif': 'dashboard'})
